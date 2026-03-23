@@ -1,3 +1,6 @@
+<img width="1408" height="768" alt="image" src="https://github.com/user-attachments/assets/73f84a6b-2f30-4742-b276-b59ba389b71f" />
+
+
 # AI Agent - TinyFish Powered
 
 > AI-powered autonomous agent for discovering, analyzing, and automating hackathon participation
