@@ -1,4 +1,4 @@
-# 🚀 Hackathon AI Agent - TinyFish Powered
+# AI Agent - TinyFish Powered
 
 > AI-powered autonomous agent for discovering, analyzing, and automating hackathon participation
 
@@ -568,4 +568,4 @@ npm run server
 # Test with curl or Postman
 ```
 
-**Good luck with your hackathon journey!** 🚀
+
