@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon AI Agent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <span class="icon">🤖</span>
+            <h1>Hack AI</h1>
+        </div>
+        <div class="status-indicator">
+            <div class="pulse-dot"></div>
+            <span>Agents Online</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Dashboard Tabs -->
+        <div class="tabs glass">
+            <button class="tab-btn active" data-target="discover">Discovery</button>
+            <button class="tab-btn" data-target="solutions">Solutions Explorer</button>
+            <button class="tab-btn" data-target="form">Auto-Fill Demo</button>
+        </div>
+
+        <!-- 1. Discovery Panel -->
+        <section id="discover" class="panel active glass">
+            <h2>Find Opportunities</h2>
+            <p class="subtitle">Enter your details to run the Orchestrator pipeline.</p>
+            
+            <div class="input-group">
+                <label>Your Skills (comma separated)</label>
+                <input type="text" id="discover-skills" value="React, Python, Node.js" placeholder="e.g. React, Python">
+            </div>
+            
+            <div class="input-group">
+                <label>Your Interests (comma separated)</label>
+                <input type="text" id="discover-interests" value="AI/ML, Web3, FinTech" placeholder="e.g. AI, Climate">
+            </div>
+
+            <button id="btn-discover" class="btn primary">Run Discovery Pipeline ✨</button>
+
+            <div id="discover-loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Agents are working... (crawling events & analyzing matches)</p>
+            </div>
+
+            <div id="discover-results" class="results-container hidden">
+                <!-- Results injected here -->
+            </div>
+        </section>
+
+        <!-- 2. Solutions Panel -->
+        <section id="solutions" class="panel glass">
+            <h2>Solutions Explorer</h2>
+            <p class="subtitle">Extract tech stacks from past winning projects.</p>
+
+            <div class="input-group">
+                <label>Hackathon Theme / Topic</label>
+                <input type="text" id="solution-theme" value="AI" placeholder="e.g. AI, Blockchain">
+            </div>
+
+            <button id="btn-solutions" class="btn primary">Search Solutions 🔍</button>
+
+            <div id="solutions-loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Analyzing winning projects on DevPost/GitHub...</p>
+            </div>
+
+            <div id="solutions-results" class="results-container hidden">
+                <!-- Results injected here -->
+            </div>
+        </section>
+
+        <!-- 3. Form Demo Panel -->
+        <section id="form" class="panel glass">
+            <h2>Auto-Submission Tester</h2>
+            <p class="subtitle">Test the form automation agent on a hackathon url.</p>
+
+            <div class="input-group">
+                <label>Hackathon URL</label>
+                <input type="text" id="form-url" value="https://www.hackerearth.com/challenges/" placeholder="https://...">
+            </div>
+            
+            <div class="input-group">
+                <label>Project Name</label>
+                <input type="text" id="form-project" value="My Awesome Agent" placeholder="Your Project Name">
+            </div>
+
+            <button id="btn-form" class="btn primary">Run Form Automation ⚡</button>
+
+            <div id="form-loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Detecting fields and mapping data...</p>
+            </div>
+
+            <div id="form-results" class="results-container hidden">
+                <!-- Results injected here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

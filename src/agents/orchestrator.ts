@@ -383,6 +383,8 @@ export class HackathonOrchestratorAgent {
           prize_pool: match.hackathon.prize_pool,
           theme: match.hackathon.theme,
           difficulty: match.hackathon.difficulty,
+          platform: match.hackathon.platform,
+          description: match.hackathon.description,
         },
         problem_context: problemData ? {
           problem_statement: problemData.problem_statement,
